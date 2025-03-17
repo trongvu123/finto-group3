@@ -78,7 +78,7 @@ export default function ServiceCard({
                 </CardContent>
                 <CardFooter className="p-4 pt-0">
                     <Button asChild className="w-full rounded-full bg-orange-500 hover:bg-orange-600">
-                        <Link href={`/services/${id}`}>View Details</Link>
+                        <Link href={`/services/${id}`}>Xem chi tiết</Link>
                     </Button>
                 </CardFooter>
             </Card>
@@ -132,7 +132,7 @@ export default function ServiceCard({
 
                     <div className="mt-auto flex justify-end pt-4">
                         <Button asChild className="rounded-full bg-orange-500 hover:bg-orange-600">
-                            <Link href={`/services/${id}`}>View Details</Link>
+                            <Link href={`/services/${id}`}>Xem chi tiết</Link>
                         </Button>
                     </div>
                 </div>

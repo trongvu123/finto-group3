@@ -12,22 +12,22 @@ import GallerySection from "@/components/gallery-section"
 export default function ServiceDetailPage() {
   return (
     <div className="flex min-h-screen flex-col">
-      {/* Back Button */}
+      {/* Nút quay lại */}
       <div className="container mt-4">
         <Link
           href="/services"
           className="inline-flex items-center text-sm font-medium text-muted-foreground hover:text-foreground"
         >
           <ChevronLeft className="mr-1 h-4 w-4" />
-          Back to Services
+          Quay lại Dịch vụ
         </Link>
       </div>
 
-      {/* Hero Banner */}
+      {/* Banner chính */}
       <div className="relative h-[300px] w-full md:h-[400px]">
         <Image
           src="/placeholder.svg?height=400&width=1200"
-          alt="Premium Dog Grooming Service"
+          alt="Dịch vụ Chăm sóc Chó Cao cấp"
           fill
           className="object-cover"
           priority
@@ -45,20 +45,20 @@ export default function ServiceDetailPage() {
                   <AvatarFallback>PG</AvatarFallback>
                 </Avatar>
                 <div>
-                  <h1 className="text-2xl font-bold md:text-3xl">Premium Dog Grooming</h1>
+                  <h1 className="text-2xl font-bold md:text-3xl">Chăm sóc Chó Cao cấp</h1>
                   <div className="flex items-center gap-2">
-                    <p className="text-muted-foreground">by PawPerfect Grooming</p>
+                    <p className="text-muted-foreground">bởi PawPerfect Grooming</p>
                     <div className="flex items-center">
                       <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
                       <span className="ml-1 text-sm font-medium">4.8</span>
-                      <span className="ml-1 text-sm text-muted-foreground">(124 reviews)</span>
+                      <span className="ml-1 text-sm text-muted-foreground">(124 đánh giá)</span>
                     </div>
                   </div>
                 </div>
               </div>
               <div className="flex items-center gap-2">
                 <span className="text-2xl font-bold text-green-600">$45</span>
-                <Badge className="bg-green-100 text-green-800">Best Seller</Badge>
+                <Badge className="bg-green-100 text-green-800">Bán chạy nhất</Badge>
               </div>
             </div>
 
@@ -66,47 +66,47 @@ export default function ServiceDetailPage() {
               <div className="md:col-span-2">
                 <Tabs defaultValue="overview" className="w-full">
                   <TabsList className="grid w-full grid-cols-3">
-                    <TabsTrigger value="overview">Overview</TabsTrigger>
-                    <TabsTrigger value="gallery">Gallery</TabsTrigger>
-                    <TabsTrigger value="reviews">Reviews</TabsTrigger>
+                    <TabsTrigger value="overview">Tổng quan</TabsTrigger>
+                    <TabsTrigger value="gallery">Thư viện</TabsTrigger>
+                    <TabsTrigger value="reviews">Đánh giá</TabsTrigger>
                   </TabsList>
                   <TabsContent value="overview" className="mt-6">
                     <div className="space-y-6">
                       <div>
-                        <h2 className="text-xl font-semibold">Service Description</h2>
+                        <h2 className="text-xl font-semibold">Mô tả Dịch vụ</h2>
                         <p className="mt-2 text-muted-foreground">
-                          Our premium dog grooming service includes a full bath with premium shampoo and conditioner,
-                          blow dry, brush out, haircut, nail trimming, ear cleaning, and teeth brushing. Your furry
-                          friend will look and feel their best after our comprehensive grooming session.
+                          Dịch vụ chăm sóc chó cao cấp của chúng tôi bao gồm tắm toàn thân với dầu gội và dầu xả cao cấp,
+                          sấy khô, chải lông, cắt tỉa lông, cắt móng, vệ sinh tai và đánh răng. Thú cưng của bạn sẽ trông
+                          và cảm thấy tuyệt vời sau buổi chăm sóc toàn diện của chúng tôi.
                         </p>
                       </div>
 
                       <div>
-                        <h2 className="text-xl font-semibold">What's Included</h2>
+                        <h2 className="text-xl font-semibold">Bao gồm những gì</h2>
                         <ul className="mt-2 grid gap-2 sm:grid-cols-2">
                           <li className="flex items-center gap-2">
                             <Check className="h-5 w-5 text-green-500" />
-                            <span>Full bath with premium products</span>
+                            <span>Tắm toàn thân với sản phẩm cao cấp</span>
                           </li>
                           <li className="flex items-center gap-2">
                             <Check className="h-5 w-5 text-green-500" />
-                            <span>Professional haircut</span>
+                            <span>Cắt tỉa lông chuyên nghiệp</span>
                           </li>
                           <li className="flex items-center gap-2">
                             <Check className="h-5 w-5 text-green-500" />
-                            <span>Nail trimming</span>
+                            <span>Cắt móng</span>
                           </li>
                           <li className="flex items-center gap-2">
                             <Check className="h-5 w-5 text-green-500" />
-                            <span>Ear cleaning</span>
+                            <span>Vệ sinh tai</span>
                           </li>
                           <li className="flex items-center gap-2">
                             <Check className="h-5 w-5 text-green-500" />
-                            <span>Teeth brushing</span>
+                            <span>Đánh răng</span>
                           </li>
                           <li className="flex items-center gap-2">
                             <Check className="h-5 w-5 text-green-500" />
-                            <span>Cologne & bandana</span>
+                            <span>Nước hoa & khăn cổ</span>
                           </li>
                         </ul>
                       </div>
@@ -114,36 +114,36 @@ export default function ServiceDetailPage() {
                       <div className="grid gap-4 sm:grid-cols-3">
                         <div className="rounded-lg bg-orange-50 p-4">
                           <Clock className="mb-2 h-5 w-5 text-orange-500" />
-                          <h3 className="font-medium">Duration</h3>
-                          <p className="text-sm text-muted-foreground">1.5 - 2 hours</p>
+                          <h3 className="font-medium">Thời lượng</h3>
+                          <p className="text-sm text-muted-foreground">1.5 - 2 giờ</p>
                         </div>
                         <div className="rounded-lg bg-green-50 p-4">
                           <MapPin className="mb-2 h-5 w-5 text-green-500" />
-                          <h3 className="font-medium">Location</h3>
-                          <p className="text-sm text-muted-foreground">In-store or Mobile</p>
+                          <h3 className="font-medium">Địa điểm</h3>
+                          <p className="text-sm text-muted-foreground">Tại cửa hàng hoặc Di động</p>
                         </div>
                         <div className="rounded-lg bg-blue-50 p-4">
                           <Calendar className="mb-2 h-5 w-5 text-blue-500" />
-                          <h3 className="font-medium">Availability</h3>
-                          <p className="text-sm text-muted-foreground">Mon-Sat, 9am-6pm</p>
+                          <h3 className="font-medium">Lịch trình</h3>
+                          <p className="text-sm text-muted-foreground">Thứ 2 - Thứ 7, 9h - 18h</p>
                         </div>
                       </div>
 
                       <div>
-                        <h2 className="text-xl font-semibold">Why Choose Us</h2>
+                        <h2 className="text-xl font-semibold">Tại sao Chọn Chúng Tôi</h2>
                         <div className="mt-2 space-y-2">
                           <div className="flex items-start gap-2">
-                            <Badge className="mt-1 bg-orange-100 text-orange-800">Certified</Badge>
-                            <p>All our groomers are certified professionals with at least 3 years of experience</p>
+                            <Badge className="mt-1 bg-orange-100 text-orange-800">Chứng nhận</Badge>
+                            <p>Tất cả chuyên viên đều được chứng nhận với ít nhất 3 năm kinh nghiệm</p>
                           </div>
                           <div className="flex items-start gap-2">
-                            <Badge className="mt-1 bg-green-100 text-green-800">Premium</Badge>
-                            <p>We use only premium, pet-safe products for all our grooming services</p>
+                            <Badge className="mt-1 bg-green-100 text-green-800">Cao cấp</Badge>
+                            <p>Chúng tôi chỉ sử dụng sản phẩm cao cấp an toàn cho thú cưng</p>
                           </div>
                           <div className="flex items-start gap-2">
-                            <Badge className="mt-1 bg-blue-100 text-blue-800">Comfort</Badge>
+                            <Badge className="mt-1 bg-blue-100 text-blue-800">Tiện nghi</Badge>
                             <p>
-                              Our salon is designed to minimize stress and create a comfortable environment for your pet
+                              Tiệm của chúng tôi được thiết kế để giảm căng thẳng và tạo môi trường thoải mái cho thú cưng
                             </p>
                           </div>
                         </div>
@@ -164,7 +164,7 @@ export default function ServiceDetailPage() {
                           <div>
                             <div className="flex items-center">
                               <h3 className="font-medium">Jessica T.</h3>
-                              <span className="ml-2 text-xs text-muted-foreground">2 days ago</span>
+                              <span className="ml-2 text-xs text-muted-foreground">2 ngày trước</span>
                             </div>
                             <div className="flex">
                               {[...Array(5)].map((_, i) => (
@@ -174,22 +174,22 @@ export default function ServiceDetailPage() {
                           </div>
                         </div>
                         <p className="mt-2 text-sm">
-                          The grooming service was amazing! My dog looks and smells fantastic. The groomer was very
-                          patient with my anxious pup and made him feel comfortable. Will definitely book again.
+                          Dịch vụ chăm sóc thật tuyệt vời! Chú chó của tôi trông và ngửi thật thơm tho. Chuyên viên rất kiên nhẫn
+                          với chú chó hay lo lắng của tôi. Chắc chắn sẽ đặt lịch lại!
                         </p>
                         <div className="mt-2 flex gap-2 overflow-x-auto">
                           <Image
                             src="/placeholder.svg?height=80&width=80"
                             width={80}
                             height={80}
-                            alt="Review photo"
+                            alt="Ảnh đánh giá"
                             className="rounded-md"
                           />
                           <Image
                             src="/placeholder.svg?height=80&width=80"
                             width={80}
                             height={80}
-                            alt="Review photo"
+                            alt="Ảnh đánh giá"
                             className="rounded-md"
                           />
                         </div>
@@ -204,7 +204,7 @@ export default function ServiceDetailPage() {
                           <div>
                             <div className="flex items-center">
                               <h3 className="font-medium">Michael R.</h3>
-                              <span className="ml-2 text-xs text-muted-foreground">1 week ago</span>
+                              <span className="ml-2 text-xs text-muted-foreground">1 tuần trước</span>
                             </div>
                             <div className="flex">
                               {[...Array(4)].map((_, i) => (
@@ -217,9 +217,8 @@ export default function ServiceDetailPage() {
                           </div>
                         </div>
                         <p className="mt-2 text-sm">
-                          Great service overall. My golden retriever looks fantastic after the grooming session. The
-                          only reason for 4 stars instead of 5 is that I had to wait a bit longer than the scheduled
-                          time.
+                          Dịch vụ tốt. Chú chó golden của tôi trông rất đẹp sau khi được chăm sóc.
+                          Lý do cho 4 sao là vì tôi phải đợi lâu hơn dự kiến.
                         </p>
                       </div>
 
@@ -230,47 +229,46 @@ export default function ServiceDetailPage() {
               </div>
 
               <div className="rounded-lg border bg-card p-4 shadow-sm">
-                <h2 className="text-lg font-semibold">Book This Service</h2>
+                <h2 className="text-lg font-semibold">Đặt Dịch vụ</h2>
                 <p className="mt-2 text-sm text-muted-foreground">
-                  Select your preferred date and time to book this premium grooming service.
+                  Chọn ngày và giờ bạn muốn đặt lịch chăm sóc thú cưng
                 </p>
                 <div className="mt-4 space-y-4">
                   <div>
-                    <label className="text-sm font-medium">Select Date</label>
+                    <label className="text-sm font-medium">Chọn Ngày</label>
                     <input type="date" className="mt-1 w-full rounded-md border border-input bg-background px-3 py-2" />
                   </div>
                   <div>
-                    <label className="text-sm font-medium">Select Time</label>
+                    <label className="text-sm font-medium">Chọn Giờ</label>
                     <select className="mt-1 w-full rounded-md border border-input bg-background px-3 py-2">
-                      <option>9:00 AM</option>
-                      <option>10:00 AM</option>
-                      <option>11:00 AM</option>
-                      <option>1:00 PM</option>
-                      <option>2:00 PM</option>
-                      <option>3:00 PM</option>
-                      <option>4:00 PM</option>
+                      <option>9:00 SA</option>
+                      <option>10:00 SA</option>
+                      <option>11:00 SA</option>
+                      <option>1:00 CH</option>
+                      <option>2:00 CH</option>
+                      <option>3:00 CH</option>
+                      <option>4:00 CH</option>
                     </select>
                   </div>
                   <div>
-                    <label className="text-sm font-medium">Pet</label>
+                    <label className="text-sm font-medium">Thú cưng</label>
                     <select className="mt-1 w-full rounded-md border border-input bg-background px-3 py-2">
                       <option>Max (Golden Retriever)</option>
                       <option>Bella (Poodle)</option>
-                      <option>Add New Pet</option>
+                      <option>Thêm thú cưng mới</option>
                     </select>
                   </div>
                   <div>
-                    <label className="text-sm font-medium">Special Requests</label>
+                    <label className="text-sm font-medium">Yêu cầu Đặc biệt</label>
                     <textarea
                       className="mt-1 w-full rounded-md border border-input bg-background px-3 py-2"
                       rows={3}
-                      placeholder="Any special instructions for the groomer..."
+                      placeholder="Bất kỳ yêu cầu đặc biệt nào cho chuyên viên..."
                     ></textarea>
                   </div>
                   <Button className="w-full bg-orange-500 hover:bg-orange-600">
                     <Link href={"/booking"}>
-                      Book Appointment
-
+                      Đặt Lịch Hẹn
                     </Link>
                   </Button>
                 </div>
@@ -280,11 +278,10 @@ export default function ServiceDetailPage() {
         </div>
       </main>
 
-      {/* Sticky Book Now Button (Mobile Only) */}
+      {/* Nút đặt lịch cố định (Chỉ mobile) */}
       <div className="sticky bottom-0 border-t bg-background p-4 md:hidden">
-        <Button className="w-full bg-orange-500 hover:bg-orange-600">Book Now - $45</Button>
+        <Button className="w-full bg-orange-500 hover:bg-orange-600">Đặt Ngay - $45</Button>
       </div>
     </div>
   )
 }
-

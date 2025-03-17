@@ -23,19 +23,18 @@ export default function Home() {
               <Search className="absolute left-2.5 top-2.5 h-4 w-4 text-muted-foreground" />
               <Input
                 type="search"
-                placeholder="Search for pet services..."
+                placeholder="Tìm kiếm dịch vụ chăm sóc thú cưng..."
                 className="w-full rounded-full bg-background pl-8 md:w-[300px] lg:w-[400px]"
               />
             </div>
           </div>
           <div className="flex items-center gap-4">
             <Link href="/login" className="text-sm font-medium hover:underline">
-              Login
+              Đăng nhập
             </Link>
             <Button className="rounded-full bg-orange-500 hover:bg-orange-600">
               <Link href={"/customer-registration"}>
-                Sign Up
-
+                Đăng kí
               </Link>
             </Button>
           </div>
@@ -49,22 +48,21 @@ export default function Home() {
               <div className="flex flex-col justify-center space-y-4">
                 <div className="space-y-2">
                   <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">
-                    Find the Perfect Pet Services
+                    Tìm dịch vụ chăm sóc thú cưng hoàn hảo
                   </h1>
                   <p className="max-w-[600px] text-muted-foreground md:text-xl">
-                    Connect with trusted pet service providers for grooming, boarding, training, and veterinary care.
+                    Kết nối với các nhà cung cấp dịch vụ thú cưng đáng tin cậy để chải chuốt, chăm sóc, huấn luyện và chăm sóc thú y.
                   </p>
                 </div>
                 <div className="flex flex-col gap-2 min-[400px]:flex-row">
                   <Button size="lg" className="rounded-full bg-orange-500 hover:bg-orange-600">
                     <Link href="/services">
-                      Find a Service Now
+                      Tìm dịch vụ ngay
                     </Link>
                   </Button>
                   <Button size="lg" variant="outline" className="rounded-full">
                     <Link href="/provider-registration">
-                      Become a Provider
-
+                      Trở thành nhà cung cấp
                     </Link>
                   </Button>
                 </div>
@@ -86,8 +84,8 @@ export default function Home() {
         <section className="bg-pastel-blue py-16">
           <div className="container px-4">
             <div className="mb-10 text-center">
-              <h2 className="text-3xl font-bold">Our Services</h2>
-              <p className="mt-2 text-muted-foreground">Find the perfect care for your furry friends</p>
+              <h2 className="text-3xl font-bold">Dịch vụ của chúng tôi</h2>
+              <p className="mt-2 text-muted-foreground">Tìm sự chăm sóc hoàn hảo cho những người bạn đáng yêu của bạn</p>
             </div>
             <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
               <Card className="transition-all hover:shadow-lg">
@@ -97,7 +95,7 @@ export default function Home() {
                   </div>
                   <h3 className="mb-2 text-xl font-medium">Grooming</h3>
                   <p className="text-center text-sm text-muted-foreground">
-                    Professional grooming services for all breeds
+                    Dịch vụ chải chuốt chuyên nghiệp cho mọi giống chó, mèo
                   </p>
                 </CardContent>
               </Card>
@@ -106,8 +104,8 @@ export default function Home() {
                   <div className="mb-4 rounded-full bg-green-100 p-3">
                     <Hotel className="h-6 w-6 text-green-500" />
                   </div>
-                  <h3 className="mb-2 text-xl font-medium">Pet Hotels</h3>
-                  <p className="text-center text-sm text-muted-foreground">Comfortable boarding for when you're away</p>
+                  <h3 className="mb-2 text-xl font-medium">Khách sạn thú cưng</h3>
+                  <p className="text-center text-sm text-muted-foreground">Nơi thú cưng của bạn được thư giản</p>
                 </CardContent>
               </Card>
               <Card className="transition-all hover:shadow-lg">
@@ -116,7 +114,7 @@ export default function Home() {
                     <Award className="h-6 w-6 text-blue-500" />
                   </div>
                   <h3 className="mb-2 text-xl font-medium">Training</h3>
-                  <p className="text-center text-sm text-muted-foreground">Behavior training and obedience classes</p>
+                  <p className="text-center text-sm text-muted-foreground">Lớp huấn luyện hành vi và vâng lời</p>
                 </CardContent>
               </Card>
               <Card className="transition-all hover:shadow-lg">
@@ -125,12 +123,12 @@ export default function Home() {
                     <Stethoscope className="h-6 w-6 text-purple-500" />
                   </div>
                   <h3 className="mb-2 text-xl font-medium">Veterinary Care</h3>
-                  <p className="text-center text-sm text-muted-foreground">Health check-ups and medical services</p>
+                  <p className="text-center text-sm text-muted-foreground">Kiểm tra sức khỏe và dịch vụ y tế</p>
                 </CardContent>
               </Card>
             </div>
             <div className="mt-10 flex justify-center">
-              <Button className="rounded-full bg-green-500 hover:bg-green-600">View All Services</Button>
+              <Button className="rounded-full bg-green-500 hover:bg-green-600">Xem tất cả các dịch vụ</Button>
             </div>
           </div>
         </section>
@@ -139,8 +137,8 @@ export default function Home() {
         <section className="py-16">
           <div className="container px-4">
             <div className="mb-10 text-center">
-              <h2 className="text-3xl font-bold">Featured Services</h2>
-              <p className="mt-2 text-muted-foreground">Top-rated services in your area</p>
+              <h2 className="text-3xl font-bold">Dịch vụ nổi bật</h2>
+              <p className="mt-2 text-muted-foreground">Các dịch vụ được đánh giá cao nhất </p>
             </div>
             <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
               <ServiceCard
@@ -169,7 +167,7 @@ export default function Home() {
               />
             </div>
             <div className="mt-10 flex justify-center">
-              <Button className="rounded-full bg-orange-500 hover:bg-orange-600">Find More Services</Button>
+              <Button className="rounded-full bg-orange-500 hover:bg-orange-600">Tìm thêm dịch vụ</Button>
             </div>
           </div>
         </section>
@@ -178,7 +176,7 @@ export default function Home() {
         <section className="bg-green-50 py-16">
           <div className="container px-4">
             <div className="mb-10 text-center">
-              <h2 className="text-3xl font-bold">Top Service Providers</h2>
+              <h2 className="text-3xl font-bold">Nhà cung cấp dịch vụ hàng đầu</h2>
               <p className="mt-2 text-muted-foreground">Trusted professionals for your pets</p>
             </div>
             <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
@@ -256,16 +254,16 @@ export default function Home() {
         <section className="bg-orange-50 py-16">
           <div className="container px-4">
             <div className="flex flex-col items-center text-center">
-              <h2 className="text-3xl font-bold">Ready to Find the Perfect Pet Service?</h2>
+              <h2 className="text-3xl font-bold">Bạn đã sẵn sàng tìm dịch vụ chăm sóc thú cưng hoàn hảo chưa?</h2>
               <p className="mt-4 max-w-[600px] text-muted-foreground">
-                Join thousands of happy pet parents who have found reliable and loving care for their furry friends.
+                Hãy tham gia cùng hàng ngàn bậc cha mẹ nuôi thú cưng hạnh phúc đã tìm thấy dịch vụ chăm sóc đáng tin cậy và yêu thương cho những người bạn đáng yêu của mình.
               </p>
               <div className="mt-8 flex flex-col gap-4 sm:flex-row">
                 <Button size="lg" className="rounded-full bg-orange-500 hover:bg-orange-600">
-                  Book an Appointment
+                  Đặt lịch hẹn
                 </Button>
                 <Button size="lg" variant="outline" className="rounded-full">
-                  Browse Services
+                  Duyệt qua các dịch vụ
                 </Button>
               </div>
             </div>
@@ -281,20 +279,20 @@ export default function Home() {
                 <span className="text-xl font-bold">Finto</span>
               </div>
               <p className="mt-4 text-sm text-muted-foreground">
-                Connecting pet parents with trusted service providers since 2023.
+                Kết nối các bậc phụ người thú cưng với các nhà cung cấp dịch vụ đáng tin cậy kể từ năm 2025.
               </p>
             </div>
             <div>
-              <h3 className="mb-4 text-lg font-medium">Services</h3>
+              <h3 className="mb-4 text-lg font-medium">Dịch vụ</h3>
               <ul className="space-y-2 text-sm">
                 <li>
                   <Link href="#" className="text-muted-foreground hover:text-foreground">
-                    Pet Grooming
+                    Chăm sóc thú cưng
                   </Link>
                 </li>
                 <li>
                   <Link href="#" className="text-muted-foreground hover:text-foreground">
-                    Pet Hotels & Boarding
+                    Khách sạn & Nhà trọ cho thú cưng
                   </Link>
                 </li>
                 <li>
@@ -304,7 +302,7 @@ export default function Home() {
                 </li>
                 <li>
                   <Link href="#" className="text-muted-foreground hover:text-foreground">
-                    Veterinary Services
+                    Dịch vụ thú y
                   </Link>
                 </li>
               </ul>
@@ -314,12 +312,12 @@ export default function Home() {
               <ul className="space-y-2 text-sm">
                 <li>
                   <Link href="#" className="text-muted-foreground hover:text-foreground">
-                    About Us
+                    Giới thiệu về chúng tôi
                   </Link>
                 </li>
                 <li>
                   <Link href="#" className="text-muted-foreground hover:text-foreground">
-                    Careers
+                    Nghề nghiệp
                   </Link>
                 </li>
                 <li>

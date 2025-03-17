@@ -19,7 +19,7 @@ export default function CustomerRegistrationPage() {
           className="inline-flex items-center text-sm font-medium text-muted-foreground hover:text-foreground"
         >
           <ChevronLeft className="mr-1 h-4 w-4" />
-          Back to Home
+          Quay lại trang chủ
         </Link>
 
         <div className="mt-6 grid gap-8 md:grid-cols-2">
@@ -28,16 +28,16 @@ export default function CustomerRegistrationPage() {
               <PawPrint className="h-8 w-8 text-orange-500" />
               <h1 className="text-3xl font-bold">Join Finto</h1>
             </div>
-            <p className="mt-2 text-xl text-muted-foreground">Create your account and find the perfect pet services</p>
+            <p className="mt-2 text-xl text-muted-foreground">Tạo tài khoản của bạn và tìm các dịch vụ thú cưng hoàn hảo</p>
             <div className="mt-8 space-y-4">
               <div className="flex items-start gap-4">
                 <div className="rounded-full bg-orange-100 p-2 text-orange-600">
                   <PawPrint className="h-5 w-5" />
                 </div>
                 <div>
-                  <h3 className="font-medium">Create Your Pet Profiles</h3>
+                  <h3 className="font-medium">Tạo hồ sơ thú cưng của bạn</h3>
                   <p className="text-sm text-muted-foreground">
-                    Add your furry friends to your account and keep track of their needs
+                    Thêm bạn thú cưng của bạn vào tài khoản của bạn và theo dõi nhu cầu của chúng
                   </p>
                 </div>
               </div>
@@ -46,9 +46,9 @@ export default function CustomerRegistrationPage() {
                   <PawPrint className="h-5 w-5" />
                 </div>
                 <div>
-                  <h3 className="font-medium">Book Services with Ease</h3>
+                  <h3 className="font-medium">Dịch dịch vụ một cách dễ dàng</h3>
                   <p className="text-sm text-muted-foreground">
-                    Find and book grooming, boarding, training, and more in just a few clicks
+                    Tìm và đặt sách chải chuốt, đào tạo, và nhiều hơn nữa chỉ trong một vài cú nhấp chuột
                   </p>
                 </div>
               </div>
@@ -57,9 +57,9 @@ export default function CustomerRegistrationPage() {
                   <PawPrint className="h-5 w-5" />
                 </div>
                 <div>
-                  <h3 className="font-medium">Manage Appointments</h3>
+                  <h3 className="font-medium">Quản lý các cuộc hẹn</h3>
                   <p className="text-sm text-muted-foreground">
-                    Keep track of upcoming appointments and service history
+                    Theo dõi các cuộc hẹn sắp tới và lịch sử dịch vụ
                   </p>
                 </div>
               </div>
@@ -78,125 +78,123 @@ export default function CustomerRegistrationPage() {
           <div>
             <Card className="border-none shadow-lg">
               <CardHeader>
-                <CardTitle>Create Your Account</CardTitle>
-                <CardDescription>Fill in your details to get started with Finto</CardDescription>
+                <CardTitle>Tạo tài khoản của bạn</CardTitle>
+                <CardDescription>Điền vào thông tin của bạn để bắt đầu với Finto</CardDescription>
               </CardHeader>
               <CardContent>
                 <Tabs defaultValue="account" className="w-full">
                   <TabsList className="grid w-full grid-cols-2">
-                    <TabsTrigger value="account">Account</TabsTrigger>
-                    <TabsTrigger value="pet">Pet Information</TabsTrigger>
+                    <TabsTrigger value="account">Tài khoản</TabsTrigger>
+                    <TabsTrigger value="pet">Thông tin thú cưng</TabsTrigger>
                   </TabsList>
                   <TabsContent value="account" className="mt-6 space-y-4">
                     <div className="grid gap-4 sm:grid-cols-2">
                       <div className="space-y-2">
-                        <label className="text-sm font-medium">First Name</label>
-                        <Input placeholder="Enter your first name" />
+                        <label className="text-sm font-medium">Tên</label>
+                        <Input placeholder="Nhập tên của bạn" />
                       </div>
                       <div className="space-y-2">
-                        <label className="text-sm font-medium">Last Name</label>
-                        <Input placeholder="Enter your last name" />
+                        <label className="text-sm font-medium">Họ</label>
+                        <Input placeholder="Nhập họ của bạn" />
                       </div>
                     </div>
 
                     <div className="space-y-2">
-                      <label className="text-sm font-medium">Email Address</label>
-                      <Input type="email" placeholder="Enter your email" />
+                      <label className="text-sm font-medium">Địa chỉ email</label>
+                      <Input type="email" placeholder="Nhập địa chỉ email của bạn" />
                     </div>
 
                     <div className="space-y-2">
-                      <label className="text-sm font-medium">Phone Number</label>
-                      <Input placeholder="Enter your phone number" />
+                      <label className="text-sm font-medium">Số điện thoại</label>
+                      <Input placeholder="Nhập số điện thoại của bạn" />
                     </div>
 
                     <div className="grid gap-4 sm:grid-cols-2">
                       <div className="space-y-2">
-                        <label className="text-sm font-medium">Password</label>
-                        <Input type="password" placeholder="Create a password" />
+                        <label className="text-sm font-medium">Mật khẩu</label>
+                        <Input type="password" placeholder="Nhập mật khẩu " />
                       </div>
                       <div className="space-y-2">
                         <label className="text-sm font-medium">Confirm Password</label>
-                        <Input type="password" placeholder="Confirm your password" />
+                        <Input type="password" placeholder="Xác nhận mật khẩu" />
                       </div>
                     </div>
 
                     <div className="space-y-2">
-                      <label className="text-sm font-medium">Address</label>
+                      <label className="text-sm font-medium">Địa chỉ</label>
                       <Input placeholder="Street address" />
                       <div className="grid gap-4 sm:grid-cols-3">
-                        <Input placeholder="City" />
-                        <Input placeholder="State/Province" />
-                        <Input placeholder="Zip/Postal Code" />
+                        <Input placeholder="Tỉnh/thành phố" />
+                        <Input placeholder="Quận/huyện" />
+                        <Input placeholder="Xã/phường" />
                       </div>
                     </div>
                   </TabsContent>
                   <TabsContent value="pet" className="mt-6 space-y-4">
                     <div className="space-y-2">
-                      <label className="text-sm font-medium">Pet Name</label>
-                      <Input placeholder="Enter your pet's name" />
+                      <label className="text-sm font-medium">Tên thú cưng</label>
+                      <Input placeholder="Nhập tên thú cưng của bạn" />
                     </div>
 
                     <div className="grid gap-4 sm:grid-cols-2">
                       <div className="space-y-2">
-                        <label className="text-sm font-medium">Pet Type</label>
+                        <label className="text-sm font-medium">Loại thú cưng</label>
                         <Select>
                           <SelectTrigger>
-                            <SelectValue placeholder="Select pet type" />
+                            <SelectValue placeholder="Chọn loại thú cưng" />
                           </SelectTrigger>
                           <SelectContent>
-                            <SelectItem value="dog">Dog</SelectItem>
-                            <SelectItem value="cat">Cat</SelectItem>
-                            <SelectItem value="bird">Bird</SelectItem>
-                            <SelectItem value="small-animal">Small Animal</SelectItem>
-                            <SelectItem value="reptile">Reptile</SelectItem>
+                            <SelectItem value="dog">Chó</SelectItem>
+                            <SelectItem value="cat">Mèo</SelectItem>
+                            <SelectItem value="bird">Chim</SelectItem>
                             <SelectItem value="other">Other</SelectItem>
                           </SelectContent>
                         </Select>
                       </div>
                       <div className="space-y-2">
-                        <label className="text-sm font-medium">Breed</label>
-                        <Input placeholder="Enter breed" />
+                        <label className="text-sm font-medium">Giống</label>
+                        <Input placeholder="Nhập tên giống" />
                       </div>
                     </div>
 
                     <div className="grid gap-4 sm:grid-cols-2">
                       <div className="space-y-2">
-                        <label className="text-sm font-medium">Age</label>
-                        <Input placeholder="Enter age" />
+                        <label className="text-sm font-medium">Tuổi</label>
+                        <Input placeholder="Nhập tuổi thú cưng" />
                       </div>
                       <div className="space-y-2">
-                        <label className="text-sm font-medium">Weight (lbs)</label>
-                        <Input placeholder="Enter weight" />
+                        <label className="text-sm font-medium">Cân nặng</label>
+                        <Input placeholder="Nhập cân nặng thú cưng" />
                       </div>
                     </div>
 
                     <div className="space-y-2">
-                      <label className="text-sm font-medium">Pet Photo</label>
+                      <label className="text-sm font-medium">Ảnh thú cưng</label>
                       <div className="rounded-lg border border-dashed p-6 text-center">
                         <Upload className="mx-auto h-8 w-8 text-muted-foreground" />
-                        <p className="mt-2 text-sm font-medium">Upload a photo of your pet</p>
-                        <p className="text-xs text-muted-foreground">This helps service providers recognize your pet</p>
+                        <p className="mt-2 text-sm font-medium">Tải lên ảnh thú cưng của bạn</p>
+                        <p className="text-xs text-muted-foreground">Điều này giúp các nhà cung cấp dịch vụ nhận ra thú cưng của bạn</p>
                         <Button variant="outline" size="sm" className="mt-4">
-                          Select Photo
+                          Chọn ảnh
                         </Button>
                       </div>
                     </div>
 
                     <div className="space-y-2">
-                      <label className="text-sm font-medium">Medical Conditions or Special Needs</label>
+                      <label className="text-sm font-medium">Điều kiện y tế hoặc nhu cầu đặc biệt</label>
                       <Textarea
-                        placeholder="Enter any medical conditions, allergies, or special needs your pet has..."
+                        placeholder="Nhập bất kỳ tình trạng bệnh lý, dị ứng hoặc nhu cầu đặc biệt nào của thú cưng của bạn..."
                         className="min-h-[100px]"
                       />
                     </div>
 
                     <div>
-                      <h3 className="mb-2 text-sm font-medium">Preferred Services</h3>
+                      <h3 className="mb-2 text-sm font-medium">Dịch vụ ưa thích</h3>
                       <div className="grid gap-2 sm:grid-cols-2">
                         <div className="flex items-center space-x-2">
                           <Checkbox id="grooming-pref" />
                           <label htmlFor="grooming-pref" className="text-sm">
-                            Pet Grooming
+                            Chăm sóc cho thú cưng
                           </label>
                         </div>
                         <div className="flex items-center space-x-2">
@@ -208,20 +206,20 @@ export default function CustomerRegistrationPage() {
                         <div className="flex items-center space-x-2">
                           <Checkbox id="training-pref" />
                           <label htmlFor="training-pref" className="text-sm">
-                            Pet Training
+                            Huấn luyện thú cưng
                           </label>
                         </div>
                         <div className="flex items-center space-x-2">
                           <Checkbox id="veterinary-pref" />
                           <label htmlFor="veterinary-pref" className="text-sm">
-                            Veterinary Services
+                            Dịch vụ thú y
                           </label>
                         </div>
                       </div>
                     </div>
 
                     <Button variant="outline" size="sm" className="mt-2">
-                      Add Another Pet
+                      Thêm thú cưng khác
                     </Button>
                   </TabsContent>
                 </Tabs>
@@ -230,21 +228,14 @@ export default function CustomerRegistrationPage() {
                 <div className="flex items-center space-x-2">
                   <Checkbox id="terms" />
                   <label htmlFor="terms" className="text-sm text-muted-foreground">
-                    I agree to Finto's{" "}
-                    <Link href="/terms" className="text-primary underline">
-                      Terms of Service
-                    </Link>{" "}
-                    and{" "}
-                    <Link href="/privacy" className="text-primary underline">
-                      Privacy Policy
-                    </Link>
+                    Tôi đồng ý với các điều khoản của Finto
                   </label>
                 </div>
-                <Button className="w-full bg-orange-500 hover:bg-orange-600">Create Account & Find Services</Button>
+                <Button className="w-full bg-orange-500 hover:bg-orange-600">Tạo tài khoản</Button>
                 <p className="text-center text-sm text-muted-foreground">
-                  Already have an account?{" "}
+                  Đã có tài khoản?{" "}
                   <Link href="/login" className="text-primary underline">
-                    Sign in
+                    Đăng nhập
                   </Link>
                 </p>
               </CardFooter>

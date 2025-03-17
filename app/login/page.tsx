@@ -1,6 +1,6 @@
 import Link from "next/link"
 import Image from "next/image"
-import { PawPrint, Mail, Lock, Github, Facebook, Apple } from "lucide-react"
+import { PawPrint, Mail, Lock, Github, Facebook, Apple, ChevronLeft } from "lucide-react"
 
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
@@ -11,6 +11,15 @@ import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle }
 export default function LoginPage() {
   return (
     <div className="flex min-h-screen flex-col bg-gradient-to-b from-orange-50 to-background">
+      <div className="container mt-4">
+        <Link
+          href="/"
+          className="inline-flex items-center text-sm font-medium text-muted-foreground hover:text-foreground"
+        >
+          <ChevronLeft className="mr-1 h-4 w-4" />
+          Quay lại Trang chủ
+        </Link>
+      </div>
       <div className="container flex flex-1 items-center justify-center py-12">
         <div className="grid w-full gap-8 md:grid-cols-2 lg:gap-16">
           <div className="hidden flex-col justify-center md:flex">
@@ -18,7 +27,7 @@ export default function LoginPage() {
               <PawPrint className="h-8 w-8 text-orange-500" />
               <h1 className="text-3xl font-bold">Finto</h1>
             </div>
-            <p className="mt-2 text-xl text-muted-foreground">Welcome back to the pet service platform</p>
+            <p className="mt-2 text-xl text-muted-foreground">Chào mừng trở lại nền tảng dịch vụ thú cưng</p>
 
             <div className="mt-8 space-y-6">
               <div className="flex items-start gap-4">
@@ -26,9 +35,9 @@ export default function LoginPage() {
                   <PawPrint className="h-5 w-5" />
                 </div>
                 <div>
-                  <h3 className="font-medium">Find the Perfect Service</h3>
+                  <h3 className="font-medium">Tìm dịch vụ hoàn hảo</h3>
                   <p className="text-sm text-muted-foreground">
-                    Connect with trusted pet service providers in your area
+                    Kết nối với các nhà cung cấp dịch vụ thú cưng đáng tin cậy trong khu vực của bạn
                   </p>
                 </div>
               </div>
@@ -37,8 +46,8 @@ export default function LoginPage() {
                   <PawPrint className="h-5 w-5" />
                 </div>
                 <div>
-                  <h3 className="font-medium">Book with Confidence</h3>
-                  <p className="text-sm text-muted-foreground">Read verified reviews and book services with ease</p>
+                  <h3 className="font-medium">Đặt dịch vụ với sự tự tin</h3>
+                  <p className="text-sm text-muted-foreground">Đọc các đánh giá đã được xác minh và dịch vụ sách một cách dễ dàng</p>
                 </div>
               </div>
               <div className="flex items-start gap-4">
@@ -46,8 +55,8 @@ export default function LoginPage() {
                   <PawPrint className="h-5 w-5" />
                 </div>
                 <div>
-                  <h3 className="font-medium">Manage Your Pets</h3>
-                  <p className="text-sm text-muted-foreground">Keep track of your pets' services and appointments</p>
+                  <h3 className="font-medium">Quản lý vật nuôi của bạn</h3>
+                  <p className="text-sm text-muted-foreground">Theo dõi các dịch vụ và cuộc hẹn của thú cưng của bạn</p>
                 </div>
               </div>
             </div>
@@ -70,20 +79,20 @@ export default function LoginPage() {
                   <PawPrint className="h-6 w-6 text-orange-500" />
                   <h2 className="text-2xl font-bold">Finto</h2>
                 </div>
-                <CardTitle className="text-2xl">Welcome back</CardTitle>
-                <CardDescription>Sign in to your account to continue</CardDescription>
+                <CardTitle className="text-2xl">Chào mừng trở lại</CardTitle>
+                <CardDescription>Đăng nhập vào tài khoản của bạn để tiếp tục</CardDescription>
               </CardHeader>
               <CardContent className="space-y-4">
                 <div className="space-y-2">
                   <div className="relative">
                     <Mail className="absolute left-3 top-3 h-4 w-4 text-muted-foreground" />
-                    <Input type="email" placeholder="Email address" className="pl-10" />
+                    <Input type="email" placeholder="Địa chỉ email" className="pl-10" />
                   </div>
                 </div>
                 <div className="space-y-2">
                   <div className="relative">
                     <Lock className="absolute left-3 top-3 h-4 w-4 text-muted-foreground" />
-                    <Input type="password" placeholder="Password" className="pl-10" />
+                    <Input type="password" placeholder="Mật khẩu" className="pl-10" />
                   </div>
                 </div>
                 <div className="flex items-center justify-between">
@@ -97,16 +106,16 @@ export default function LoginPage() {
                     </label>
                   </div>
                   <Link href="/forgot-password" className="text-sm font-medium text-orange-500 hover:underline">
-                    Forgot password?
+                    Quên mật khẩu?
                   </Link>
                 </div>
-                <Button className="w-full bg-orange-500 hover:bg-orange-600">Sign In</Button>
+                <Button className="w-full bg-orange-500 hover:bg-orange-600">Đăng nhập</Button>
                 <div className="relative">
                   <div className="absolute inset-0 flex items-center">
                     <Separator className="w-full" />
                   </div>
                   <div className="relative flex justify-center text-xs uppercase">
-                    <span className="bg-background px-2 text-muted-foreground">Or continue with</span>
+                    <span className="bg-background px-2 text-muted-foreground">Hoặc tiếp tục với</span>
                   </div>
                 </div>
                 <div className="grid grid-cols-3 gap-3">
@@ -126,9 +135,9 @@ export default function LoginPage() {
               </CardContent>
               <CardFooter className="flex flex-col">
                 <p className="mt-2 text-center text-sm text-muted-foreground">
-                  Don't have an account?{" "}
+                  Không có tài khoản??{" "}
                   <Link href="/customer-registration" className="text-orange-500 hover:underline">
-                    Sign up
+                    Đăng ký
                   </Link>
                 </p>
               </CardFooter>
