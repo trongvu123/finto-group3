@@ -93,7 +93,7 @@ export default function Home() {
                   <div className="mb-4 rounded-full bg-orange-100 p-3">
                     <Scissors className="h-6 w-6 text-orange-500" />
                   </div>
-                  <h3 className="mb-2 text-xl font-medium">Grooming</h3>
+                  <h3 className="mb-2 text-xl font-medium">Chải chuốt</h3>
                   <p className="text-center text-sm text-muted-foreground">
                     Dịch vụ chải chuốt chuyên nghiệp cho mọi giống chó, mèo
                   </p>
@@ -113,7 +113,7 @@ export default function Home() {
                   <div className="mb-4 rounded-full bg-blue-100 p-3">
                     <Award className="h-6 w-6 text-blue-500" />
                   </div>
-                  <h3 className="mb-2 text-xl font-medium">Training</h3>
+                  <h3 className="mb-2 text-xl font-medium">Đào tạo</h3>
                   <p className="text-center text-sm text-muted-foreground">Lớp huấn luyện hành vi và vâng lời</p>
                 </CardContent>
               </Card>
@@ -122,7 +122,7 @@ export default function Home() {
                   <div className="mb-4 rounded-full bg-purple-100 p-3">
                     <Stethoscope className="h-6 w-6 text-purple-500" />
                   </div>
-                  <h3 className="mb-2 text-xl font-medium">Veterinary Care</h3>
+                  <h3 className="mb-2 text-xl font-medium">Veterinary CareChăm sóc thú y</h3>
                   <p className="text-center text-sm text-muted-foreground">Kiểm tra sức khỏe và dịch vụ y tế</p>
                 </CardContent>
               </Card>
@@ -177,7 +177,7 @@ export default function Home() {
           <div className="container px-4">
             <div className="mb-10 text-center">
               <h2 className="text-3xl font-bold">Nhà cung cấp dịch vụ hàng đầu</h2>
-              <p className="mt-2 text-muted-foreground">Trusted professionals for your pets</p>
+              <p className="mt-2 text-muted-foreground">Chuyên gia đáng tin cậy cho thú cưng của bạn</p>
             </div>
             <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
               <ProviderCard
@@ -297,7 +297,7 @@ export default function Home() {
                 </li>
                 <li>
                   <Link href="#" className="text-muted-foreground hover:text-foreground">
-                    Training & Behavior
+                    Đào tạo & Hành vi
                   </Link>
                 </li>
                 <li>
